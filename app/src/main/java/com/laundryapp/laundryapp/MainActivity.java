@@ -15,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -52,16 +53,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		rateCardBtn.setOnClickListener(MainActivity.this);
 
 
-		/*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+		FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 		fab.setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View view)
 			{
-				Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+				Snackbar.make(view, "Hi..:) Welcome to Laundry app..", Snackbar.LENGTH_LONG)
 				        .setAction("Action", null).show();
 			}
-		});*/
+		});
 
 		DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 		ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -142,14 +143,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		}
 		else if (id == R.id.nav_rate_us)
 		{
+			Toast.makeText(mContext, "Come soon..", Toast.LENGTH_LONG).show();
 
 		}
 		else if (id == R.id.nav_share)
 		{
-
+			Toast.makeText(mContext, "Come soon..", Toast.LENGTH_LONG).show();
 		}
 		else if (id == R.id.nav_send)
 		{
+			Toast.makeText(mContext, "Come soon..", Toast.LENGTH_LONG).show();
+
+		}
+		else if (id == R.id.nav_aboutus)
+		{
+			Toast.makeText(mContext, "Come soon..", Toast.LENGTH_LONG).show();
+
+		}
+		else if (id == R.id.nav_contactus)
+		{
+			Toast.makeText(mContext, "Come soon..", Toast.LENGTH_LONG).show();
 
 		}
 
