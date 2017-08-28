@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottomHRLID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:background="@color/empty"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/booklaundryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourty"
+            android:background="@drawable/orderbook_rectangle"
+            android:gravity="center"
+            android:padding="@dimen/eigth"
+            android:text="@string/book_laundry"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/seventeen"
+            />
+
+        <Button
+            android:id="@+id/trackOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourty"
+            android:layout_marginTop="@dimen/twenty"
+            android:background="@drawable/orderbook_rectangle"
+            android:gravity="center"
+            android:text="@string/trach_order"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/seventeen"
+            />
+
+        <Button
+            android:id="@+id/rateCardBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourty"
+            android:layout_marginTop="@dimen/twenty"
+            android:background="@drawable/orderbook_rectangle"
+            android:gravity="center"
+            android:text="@string/rate_card"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/seventeen"
+            />
+    </LinearLayout>
+</LinearLayout>

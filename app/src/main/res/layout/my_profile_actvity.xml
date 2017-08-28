@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/login_background_color"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomHRLID"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/capture_pic"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/ten"
+                android:src="@drawable/guest_user_icon"
+                app:civ_border_color="@color/lightgrey"
+                app:civ_border_width="1dp"/>
+
+
+            <TextView
+                android:id="@+id/usernameTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ten"
+                android:padding="@dimen/five"
+                android:text="Shiva Cherry"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_color"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ten">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/personal_info"
+                        android:textColor="@color/HeaderTitleColor"
+                        android:textSize="@dimen/seventeen"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/five"
+                        android:text="@string/user_name_lbl"
+                        android:textColor="@color/lightblue"
+                        android:textSize="@dimen/txt_size_book_now"/>
+
+                    <EditText
+                        android:id="@+id/useridTVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/empty"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:paddingLeft="@dimen/five"
+                        android:text="@string/user_name"
+                        android:textColor="@color/HeaderColor"
+
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/txt_size_book_now"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zeropointfive"
+                        android:layout_marginTop="@dimen/two"
+                        android:background="@color/lightgrey"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/five"
+                        android:text="@string/gender_label"
+                        android:textColor="@color/lightblue"
+                        android:textSize="@dimen/txt_size_book_now"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioSex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/darkblue"
+
+                            android:checked="true"
+                            android:text="@string/male"/>
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/darkblue"
+                            android:text="@string/female"/>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/genderTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="@dimen/five"
+                        android:text="Male"
+
+                        android:textColor="@color/HeaderColor"
+                        android:textSize="@dimen/txt_size_book_now"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zeropointfive"
+                        android:layout_marginTop="@dimen/two"
+                        android:background="@color/lightgrey"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/five"
+                        android:text="@string/dateofbirth_label"
+                        android:textColor="@color/lightblue"
+                        android:textSize="@dimen/txt_size_book_now"/>
+
+                    <EditText
+                        android:id="@+id/dobTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/empty"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+
+                        android:paddingBottom="@dimen/five"
+                        android:paddingLeft="@dimen/five"
+                        android:text="11-Dec-1991"
+                        android:singleLine="true"
+                        android:textColor="@color/HeaderColor"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/txt_size_book_now"/>
+                    <DatePicker
+                        android:id="@+id/datePicker1"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/button1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="30dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zeropointfive"
+                        android:layout_marginTop="@dimen/two"
+                        android:background="@color/lightgrey"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/five"
+                        android:text="@string/mobile_no_label"
+                        android:textColor="@color/lightblue"
+                        android:textSize="@dimen/txt_size_book_now"/>
+
+                    <EditText
+                        android:id="@+id/mobileNoTVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:digits="0123456789"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/five"
+
+                        android:text="+91 9948737414"
+                        android:textColor="@color/HeaderTitleColor"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/txt_size_book_now"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zeropointfive"
+                        android:layout_marginTop="@dimen/two"
+                        android:background="@color/lightgrey"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginBottom="@dimen/fifteen"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/five"
+                        android:text="@string/emailaddress_label"
+                        android:textColor="@color/lightblue"
+                        android:textSize="@dimen/txt_size_book_now"/>
+
+                    <EditText
+                        android:id="@+id/emailidTVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/five"
+
+                        android:singleLine="true"
+                        android:paddingLeft="@dimen/five"
+                        android:text="Shivashiv080@gmail.com"
+                        android:textColor="@color/HeaderTitleColor"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/txt_size_book_now"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zeropointfive"
+                        android:layout_marginTop="@dimen/two"
+                        android:background="@color/lightgrey"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomHRLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/empty">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/submit_rectangle"
+            android:gravity="center"
+            android:text="@string/cancel"
+
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            />
+
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/submit_rectangle"
+
+            android:gravity="center"
+            android:text="@string/submit"
+
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+

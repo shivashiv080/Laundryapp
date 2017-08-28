@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Laundry App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="book_laundry">Book Laundry</string>
+    <string name="trach_order">Track Order</string>
+    <string name="rate_card">Rate Card</string>
+    <string name="shiva">Rate Card</string>
+    <string name="profile">Profile</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+
+
+    <string name="pick_update">Pick Date</string>
+    <string name="pickdate">Pick Up Date</string>
+    <string name="pick_up_time">Pick Up Time</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="delivery_time">Delivery Time</string>
+
+
+    <!--My Profile-->
+    <string name="personal_info">Personal Information</string>
+    <string name="user_name">Shiva Prasad.Ch</string>
+    <string name="user_name_lbl">Username</string>
+    <string name="userid_label">User Id</string>
+    <string name="gender_label">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dateofbirth_label">Date of Birth</string>
+    <string name="contact_info_label">Contact Information </string>
+    <string name="mobile_no_label">Mobile Number</string>
+    <string name="emailaddress_label">Email Address</string>
+    <string name="address_label">Address</string>
+    <string name="doorno_street_no_label">Door No/Street Name/Area Name</string>
+    <string name="landmark_label">Landmark</string>
+    <string name="cityy_label">City</string>
+    <string name="statee_label">State</string>
+    <string name="postalcode_label">Postal Code</string>
+
+
+</resources>
