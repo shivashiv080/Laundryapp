@@ -31,8 +31,6 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 	@BindView(R.id.radioSex)
 	RadioGroup radioSex;
 
-//	@BindView(R.id.radioSexButton)
-//	RadioGroup radioSexButton;
 
 	private RadioButton radioSexButton;
 
